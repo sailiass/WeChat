@@ -1,14 +1,5 @@
 //app.js
 App({
-
-  wxdata: {
-    avatarUrl: '1111111',
-    a: '1111111'
-  },
-
-
-
-  
   onLaunch: function () {
     console.log('调用login方法');
     //调用wx.login  api
