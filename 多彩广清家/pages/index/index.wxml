@@ -1,0 +1,32 @@
+<!--index.wxml-->
+<view class='toubu'>
+  <view>
+      <button  bindtap='cd' ><image class='userinfo-avatar' src='{{avatarUrl}}'></image></button>
+     
+  </view>
+  <view class='chengjiu'>
+      <navigator url=''>{{app.wxdata.a}}</navigator>
+  </view>
+</view>
+
+    <swiper indicator-dots="{{indicatorDots}}"  
+            autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" class='swiper'>  
+          <block wx:for="{{imgUrls}}">  
+            <swiper-item>  
+               <navigator url="{{item.link}}" hover-class="navigator-hover">  
+                <image src="{{item.url}}" class="slide-image" width="355" height="150"/>  
+               </navigator>   
+            </swiper-item>  
+          </block>  
+    </swiper>  
+
+<view>
+  <view>
+      <view ><navigator url='../../detail/card/card'>打卡系统</navigator></view>
+      <view ><navigator url='../../detail/challenge/challenge'>挑战系统</navigator></view>
+  </view>
+  <view>
+      <view ><navigator url='../../detail/rank/rank'>琅琊榜</navigator></view>
+      <view ><navigator url='../../detail/integral/integral'>运动积分</navigator></view>
+  </view>
+</view>
