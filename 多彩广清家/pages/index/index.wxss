@@ -1,8 +1,5 @@
 /**index.wxss**/
-page{
-    width:100%;
-   height:100%;
-}
+
 
 .userinfo {
   display: flex;
@@ -15,7 +12,12 @@ page{
   margin: 20rpx;
   border-radius: 50%;
 }
-
+.userinfo-hz {
+  width: 60rpx;
+  height: 60rpx;
+  margin: 20rpx;
+  border-radius: 60%;
+}
 .toubu {
   background:rebeccapurple;
   display: flex;
@@ -40,6 +42,31 @@ page{
     display: flex;
     align-content: center;
 }
-.xinxi{
-  background: red;
+
+.grid-row {
+   display: flex; 
+}
+
+.grid-item {
+  position: relative;
+  flex: 1; 
+  height: 218rpx; 
+  margin: 0 8rpx; 
+  border-radius: 4px; 
+  overflow: hidden;
+  border:30px solid #fff;
+}
+
+.grid-item text {
+  position: absolute;
+  bottom: 12%;
+  left: 14%;
+  font-size: 38rpx;
+  font-weight: normal;
+  color: #fff;
+  z-index: 1;
+}
+.texth{
+  line-height:500%;
+
 }

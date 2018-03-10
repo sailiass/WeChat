@@ -5,7 +5,7 @@ Page({
   
   data: {
     avatarUrl: '',
-    chengjiu:'成就徽章',
+    chengjiu:'../../images/chengjiu.png',
     imgUrls: [
       {
         link: '/pages/index/index',

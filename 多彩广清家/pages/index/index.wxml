@@ -4,10 +4,10 @@
      <image class='userinfo-avatar' src='{{avatarUrl}}'></image>
   </view>
   <view class='chengjiu'>
-      <navigator url=''>{{chengjiu}}</navigator>
+      <navigator url=''><image class='userinfo-hz' src='{{chengjiu}}'></image></navigator>
   </view>
 </view>
-
+      <!-- 图片轮播 -->
     <swiper indicator-dots="{{indicatorDots}}"  
             autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" class='swiper'>  
           <block wx:for="{{imgUrls}}" wx:key='{{index}}'>  
@@ -19,13 +19,34 @@
           </block>  
     </swiper>  
 
-<view>
-  <view>
-      <view ><navigator url='../../detail/card/card'>打卡系统</navigator></view>
-      <view ><navigator url='../../detail/challenge/challenge'>挑战系统</navigator></view>
-  </view>
-  <view>
-      <view ><navigator url='../../detail/rank/rank'>琅琊榜</navigator></view>
-      <view ><navigator url='../../detail/integral/integral'>运动积分</navigator></view>
-  </view>
-</view>
+ <view class="grid-wrp">
+      <view class="grid-row">
+        <view class="grid-item">
+          <navigator url='../../detail/card/card'>
+          <text class='texth'>打卡系统</text>
+          </navigator>
+          <image src="../../images/1.jpg"></image>
+        </view>
+        <view class="grid-item">
+          <navigator url='../../detail/challenge/challenge'>
+           <text class='texth'>挑战系统</text></navigator>
+          <image src="../../images/9.jpg"></image>
+        </view>
+      </view>
+      <view class="grid-row">
+        <view class="grid-item">
+            <navigator url='../../detail/rank/rank'>
+            <text class='texth'>琅琊榜</text></navigator>
+            <image src="../../images/3.jpg"></image>
+        </view>
+        <view class="grid-item">
+          <navigator url='../../detail/integral/integral'>
+           <text class='texth'>运动积分</text></navigator>
+          <image src="../../images/4.jpg"></image>
+        </view>
+      </view>
+    </view>
+
+
+
+

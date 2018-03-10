@@ -1,1 +1,5 @@
-我的
+<button bindtap="t3rdSession" style="background:blue">我的步数</button>
+<text>iv:{{iv}}\n</text>
+<text>openid:{{openid}}\n</text>
+<text>appid:{{appid}}\n</text>
+<text>sessionKey:{{session_key}}\n</text>
