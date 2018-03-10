@@ -1,12 +1,11 @@
 //index.js
 //获取应用实例
 var app = getApp()
-
 Page({
-
+  
   data: {
-    avatarUrl:'',
-
+    avatarUrl: '',
+    chengjiu:'成就徽章',
     imgUrls: [
       {
         link: '/pages/index/index',
@@ -25,32 +24,23 @@ Page({
     duration: 1000,
     userInfo: {}  
   },
+/*
+* 生命周期函数--监听页面加载
+*
+*/
+onLoad:function(){  
+  var that = this
+  wx.getUserInfo({
+    success: function (res) {
+      var userInfo = res.userInfo
+      var avatarUrl = userInfo.avatarUrl
+      that.setData({
+        avatarUrl: avatarUrl
+      })
 
+    }
+  })
+},
 
-
-
-
-
-
-
-
-
-
-
-  //事件处理函数
-  cd: function() {
-    var that=this
-    wx.getUserInfo({
-      success: function (res) {
-        var userInfo = res.userInfo
-        var avatarUrl = userInfo.avatarUrl
-        that.setData({
-          avatarUrl: avatarUrl
-        })
-      
-      }
-    })
-    console.logo(app.wxdata.a);
-  },
 
 })

@@ -1,17 +1,16 @@
 <!--index.wxml-->
 <view class='toubu'>
   <view>
-      <button  bindtap='cd' ><image class='userinfo-avatar' src='{{avatarUrl}}'></image></button>
-     
+     <image class='userinfo-avatar' src='{{avatarUrl}}'></image>
   </view>
   <view class='chengjiu'>
-      <navigator url=''>{{app.wxdata.a}}</navigator>
+      <navigator url=''>{{chengjiu}}</navigator>
   </view>
 </view>
 
     <swiper indicator-dots="{{indicatorDots}}"  
             autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" class='swiper'>  
-          <block wx:for="{{imgUrls}}">  
+          <block wx:for="{{imgUrls}}" wx:key='{{index}}'>  
             <swiper-item>  
                <navigator url="{{item.link}}" hover-class="navigator-hover">  
                 <image src="{{item.url}}" class="slide-image" width="355" height="150"/>  
