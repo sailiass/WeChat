@@ -1,16 +1,23 @@
 
 <view class="section">
   <form bindsubmit="formSubmit">
-    <textarea placeholder="说点什么？" name="textarea" auto-focus/>
-    <button catchtap="subimg" style='background:#00ff00'>添加图片</button>
-    
+    <textarea class="weui-textarea" placeholder="说点什么？" name="textarea" auto-focus style="height: 5.3em"/>
+       <view class="weui-cell__bd">
+            <view class="weui-uploader">
+                <view class="weui-uploader__bd">
+                    <view class="weui-uploader__input-box">
+                        <view class="weui-uploader__files" id="uploaderFiles">
+                            <view>
+                                <image class="weui-uploader__img" src="{{imageList}}" mode="aspectFill" />
+                            </view>
+                    </view>
 
-    <button form-type="submit"> 提交 </button>
+                        <view class="weui-uploader__input" bindtap="subimg"></view>
+                    </view>
+                </view>
+            </view>
+        </view>
+        <button class="weui-btn" bindtap="submit" form-type="submit">发布</button>
   </form>
-
-      <view class='grid-row'>
-            <image src="{{imageList}}" style='width:30px;height:40px'></image>  
-      </view>
-
 </view>
 
