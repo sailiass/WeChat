@@ -1,0 +1,39 @@
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+.userinfo-hz {
+  width: 60rpx;
+  height: 60rpx;
+  margin: 20rpx;
+  border-radius: 60%;
+}
+.toubu {
+  background:rebeccapurple;
+  display: flex;
+}
+.chengjiu {
+  margin: 50rpx;
+  font-size: 30px;
+  text-align: center;
+}
+  
+    .previewimg{   
+        width:45%;  
+        height:20px;  
+    }  
+    .previewimg image{  
+        width:20%;  
+        height:20%;  
+    }
+
+    .grid-row {
+   display: flex; 
+}
+.grid-item {
+  height: 218rpx; 
+  margin: 0 8rpx; 
+  overflow: hidden;
+}

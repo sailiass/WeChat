@@ -41,6 +41,27 @@ onLoad:function(){
     }
   })
 },
+tzcard:function(){
+  wx.navigateTo({
+    url:'../../detail/card/card'
+  })
+},
+tzchallenge: function () {
+    wx.navigateTo({
+      url: '../../detail/challenge/challenge'
+    })
+  },
+tzrank: function () {
+  wx.navigateTo({
+    url: '../../detail/rank/rank'
+  })
+},
+ tzintegral: function () {
+  wx.navigateTo({
+    url: '../../detail/integral/integral'
+  })
+}
+
 
 
 })

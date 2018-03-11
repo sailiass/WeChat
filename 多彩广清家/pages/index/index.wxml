@@ -21,27 +21,22 @@
 
  <view class="grid-wrp">
       <view class="grid-row">
-        <view class="grid-item">
-          <navigator url='../../detail/card/card'>
+        <view class="grid-item" bindtap="tzcard">
           <text class='texth'>打卡系统</text>
-          </navigator>
           <image src="../../images/1.jpg"></image>
         </view>
-        <view class="grid-item">
-          <navigator url='../../detail/challenge/challenge'>
-           <text class='texth'>挑战系统</text></navigator>
+        <view class="grid-item" bindtap="tzchallenge">
+           <text class='texth'>挑战系统</text>
           <image src="../../images/9.jpg"></image>
         </view>
       </view>
       <view class="grid-row">
-        <view class="grid-item">
-            <navigator url='../../detail/rank/rank'>
-            <text class='texth'>琅琊榜</text></navigator>
+        <view class="grid-item" bindtap="tzrank">
+            <text class='texth'>琅琊榜</text>
             <image src="../../images/3.jpg"></image>
         </view>
-        <view class="grid-item">
-          <navigator url='../../detail/integral/integral'>
-           <text class='texth'>运动积分</text></navigator>
+        <view class="grid-item" bindtap="tzintegral">
+           <text class='texth'>运动积分</text>
           <image src="../../images/4.jpg"></image>
         </view>
       </view>

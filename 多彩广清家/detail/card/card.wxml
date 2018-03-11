@@ -1,2 +1,18 @@
+<view class='toubu'>
+  <view>
+     <image class='userinfo-avatar' src='{{avatarUrl}}'></image>
+  </view>
+  <view class='chengjiu'>
+      <navigator url=''><image class='userinfo-hz' src='{{chengjiu}}'></image></navigator>
+  </view>
+</view>
 
-	打卡系统：card
+<view class="post-container" catchtap='tapactivity'>
+ <view wx:for="{{imgUrls}}" wx:for-item="image" wx:key='{{index}}' class='grid-item' bindtap='tzone'>  
+      <text class="post-title">活动{{index+1}}</text>
+      <image class="post-image" src="{{imgSrc}}"></image>
+      <text class="post-content">{{content}}</text>
+ </view>  
+</view>
+
+

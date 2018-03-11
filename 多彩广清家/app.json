@@ -6,7 +6,9 @@
     "detail/card/card",
     "detail/challenge/challenge",
     "detail/rank/rank",
-    "detail/integral/integral"
+    "detail/integral/integral",
+
+    "detail/card/card/activityone/activity"
     
   ],
   "window": {

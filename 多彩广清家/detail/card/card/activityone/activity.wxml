@@ -1,0 +1,38 @@
+<view class='toubu'>
+  <view>
+     <image class='userinfo-avatar' src='{{avatarUrl}}'></image>
+  </view>
+  <view class='chengjiu'>
+      <navigator url=''><image class='userinfo-hz' src='{{chengjiu}}'></image></navigator>
+  </view>
+</view>
+
+<view class="section">
+  <form bindsubmit="bindFormSubmit">
+    <textarea placeholder="说点什么？" name="textarea" auto-focus/>
+    <button bindtap="subimg" style='background:#00ff00'>添加图片</button>
+
+    <span style="font-family:'Comic Sans MS';font-size:18px;color:#333333;">
+      <view class='grid-row'>
+        <view wx:for="{{imageList}}" wx:for-item="image" wx:key='{{index}}' class='grid-item'>  
+            <image src="{{image}}" data-src="{{image}}" bindtap="previewImage" style='width:30px;height:40px'></image>  
+        </view>  
+      </view>
+    </span>  
+
+    <button form-type="submit"> 提交 </button>
+  </form>
+
+
+
+  
+
+
+
+
+
+
+
+
+</view>
+
