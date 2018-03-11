@@ -29,17 +29,7 @@ Page({
 *
 */
 onLoad:function(){  
-  var that = this
-  wx.getUserInfo({
-    success: function (res) {
-      var userInfo = res.userInfo
-      var avatarUrl = userInfo.avatarUrl
-      that.setData({
-        avatarUrl: avatarUrl
-      })
 
-    }
-  })
 },
 tzcard:function(){
   wx.navigateTo({

@@ -32,8 +32,22 @@ App({
             } else {
               console.log('获取用户登录态失败！' + res.errMsg)
             }
+          },
+          
+        })
+
+        wx.getUserInfo({
+          success: function (res) {
+            var userInfo = res.userInfo
+            var nickName = userInfo.nickName
+            var avatarUrl = userInfo.avatarUrl
+            var gender = userInfo.gender 
+            var province = userInfo.province
+            var city = userInfo.city
+            var country = userInfo.country
           }
         })
+
       }
     })
 

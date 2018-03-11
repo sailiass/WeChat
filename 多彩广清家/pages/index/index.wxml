@@ -1,12 +1,4 @@
-<!--index.wxml-->
-<view class='toubu'>
-  <view>
-     <image class='userinfo-avatar' src='{{avatarUrl}}'></image>
-  </view>
-  <view class='chengjiu'>
-      <navigator url=''><image class='userinfo-hz' src='{{chengjiu}}'></image></navigator>
-  </view>
-</view>
+
       <!-- 图片轮播 -->
     <swiper indicator-dots="{{indicatorDots}}"  
             autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" class='swiper'>  
